@@ -46,7 +46,7 @@ This repository contains only generalized and public-safe material.
 It does not contain:
 - employer data
 - internal operational procedures
-- confidential infrastructure information
+- confidential information
 - proprietary analyses
 
 ## Status
