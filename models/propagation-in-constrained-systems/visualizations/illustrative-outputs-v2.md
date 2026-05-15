@@ -3,9 +3,10 @@
 The following figures are synthetic and intended only as illustrative examples of possible structural behaviors implied by the model.
 <br>
 
-## Figure 1 — Illustrative propagation exposure by time and network segment
+## Figure 1 
 <br>
-<img width="3059" height="1770" alt="v2_heatmap_time_network_location" src="https://github.com/user-attachments/assets/823c7a47-7b16-458f-b835-eefd6f3cd29d" />
+<img width="2400" height="1400" alt="figure1_heatmap" src="https://github.com/user-attachments/assets/0bf74d95-0e72-4c4d-815d-8755ff88fd79" />
+
 
 This example illustrates how propagation exposure may vary across time and directed network segments within the same constrained system.
 
@@ -21,9 +22,8 @@ The figure illustrates several qualitative behaviors implied by the structural f
 - propagation exposure may vary dynamically over time even within the same network structure
 <br>
 
-## Figure 2 — Illustrative system-level propagation impact across hypothetical scenarios
-<br>
-<img width="3517" height="1769" alt="illustrative_propagation_impact_scenarios" src="https://github.com/user-attachments/assets/b191ce45-7c86-4f98-a784-f72a080a545b" />
+## Figure 2 
+<img width="2400" height="1400" alt="figure2_scenarios" src="https://github.com/user-attachments/assets/fea0eb37-9312-475b-8d1c-59399e4d1d1e" />
 
 This example illustrates how structurally different scenarios may generate different levels of system-level propagation impact.
 
@@ -39,9 +39,9 @@ Potential operational interpretations and analytical uses include:
 The comparison may be performed across different time windows, operating conditions, or subsystem boundaries depending on the analytical context.
 <br>
 
-## Figure 3a — Illustrative propagation impact over time
+## Figure 3a
 <br>
-<img width="2948" height="1765" alt="figure_3a_consistent_agents" src="https://github.com/user-attachments/assets/49d16cb9-4ff0-40a9-9765-50408d092473" />
+<img width="2400" height="1400" alt="figure3a_clean" src="https://github.com/user-attachments/assets/45942160-2552-4d11-b84c-5007704764eb" />
 
 Illustrative evolution of propagation impact \(I_a(t)\) for four mobile agents in the system.
 
@@ -50,18 +50,18 @@ The figure illustrates how propagation impact may vary dynamically over time dep
 Under identical global system structure, different agents may experience substantially different propagation impact trajectories due to differences in network position and interaction timing.
 <br>
 
-## Figure 3b — Illustrative propagation impact by agent at time \(t\)
+## Figure 3b
 <br>
-<img width="2396" height="1767" alt="figure_3b_consistent_agents" src="https://github.com/user-attachments/assets/003864fd-8e98-4a9d-9db3-dd1aef0cb5ee" />
+<img width="2000" height="1400" alt="figure3b_clean" src="https://github.com/user-attachments/assets/221a02a3-66c7-4cc1-855c-9c99d3884a74" />
 
 Illustrative snapshot of propagation impact \(I_a(t)\) across agents at a single time point.
 
 The figure demonstrates how the model may support identification of agents with elevated propagation impact under current system conditions.
 <br>
 
-## Figure 3c — Average delay versus propagation impact
+## Figure 3c
 <br>
-<img width="2368" height="1765" alt="figure_3c_avg_delay_vs_propagation_impact" src="https://github.com/user-attachments/assets/b7d63912-f0c1-443f-9dd6-8d517233bb10" />
+<img width="2000" height="1400" alt="figure3c_clean" src="https://github.com/user-attachments/assets/31509d24-0678-4e7a-8eeb-d905ad3122e3" />
 
 Illustrative comparison between average delay magnitude and propagation impact across agents.
 
