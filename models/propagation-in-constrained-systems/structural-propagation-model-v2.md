@@ -34,7 +34,7 @@ Each location $\ell \in N \cup E$ has:
 - Capacity: $C(\ell)$  
 - Load: $L(\ell, t)$
 
-Local load $L(\ell,t)$ emerges from the distribution and interaction of agents across the system graph, while structural properties $S$ influence capacity distribution, bottlenecks, and coupling opportunities.
+Local load $L(\ell,t)$ emerges from the distribution and interaction of agents across the system graph, while structural properties $S$ influence capacity distribution and downstream coupling opportunities.
 
 Define local utilization:
 
@@ -85,59 +85,36 @@ where:
 
 ## Coupling Factor $k_a(t)$
 
-The coupling factor represents the extent to which agent $a$ is exposed to future interaction opportunities capable of propagating system effects.
+The coupling factor represents the downstream coupling exposure available to agent $a$ at time $t$.
 
-It is not fixed, but depends on structural and temporal properties of the system.
-
-A minimal representation is:
+In the minimal formulation, coupling exposure is derived from the system graph and the current position of the agent:
 
 $$
-k_a(t)=k(n_{\text{local}},n_{\text{future}},s_a(t),\tau_a(t))
+k_a(t)=k(G,\ell_a(t))
 $$
 
 where:
 
-- $n_{\text{local}}$: local interaction density  
-- $n_{\text{future}}$: number of reachable downstream couplings  
-- $s_a(t)$: structural exposure  
-- $\tau_a(t)$: temporal interaction pressure or schedule proximity  
+- $G$: system graph and structural properties  
+- $\ell_a(t)$: current location of agent $a$  
 
-Examples of structural exposure may include bottlenecks, hub position, capacity constraints, and downstream interaction density.
+The function $k$ may represent the number, strength, or structural importance of downstream interactions reachable from the agent’s current position.
 
-Mobile agents are treated as primary propagation carriers because they continuously encounter new coupling opportunities across the system.
+Mobile agents are treated as primary propagation carriers because they continuously move through the graph and encounter new coupling opportunities.
 
 ---
 
 ## Interpretation
 
-Propagation requires both:
-
-1. Local capacity pressure  
-2. Available downstream couplings  
+Propagation emerges when local capacity pressure interacts with downstream coupling opportunities defined by system structure.
 
 Thus:
 
 - high load without coupling → limited spread  
 - high coupling without load → limited spread  
-- propagation emerges through their interaction  
+- propagation becomes amplified when both are present  
 
----
-
-## Core Principle
-
-$$ \mathrm{Propagation} = \mathrm{structural\ constraints} \times \mathrm{capacity\ pressure} \times \mathrm{coupling\ exposure} $$
-
-Propagation emerges when agents with access to downstream couplings interact with local capacity constraints under temporal pressure.
-
----
-
-## Notes on Extensions
-
-A system-level stress variable $M(t)$ may later be introduced to represent accumulated operational pressure and recovery dynamics.
-
-Such a state could modify local activation thresholds or coupling sensitivity.
-
-Not included in the minimal formulation.
+The model separates local activation pressure from downstream propagation opportunity, allowing propagation exposure to be analyzed without requiring full system simulation.
 
 ---
 
