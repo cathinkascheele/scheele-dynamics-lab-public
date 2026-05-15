@@ -2,7 +2,7 @@
 
 ## Model Development
 
-The model was developed iteratively through exploratory analysis, qualitative observation, and gradual abstraction of recurring system behavior.
+The current model formulation was developed iteratively through exploratory analysis, qualitative observation, and gradual abstraction of recurring system behavior.
 
 Early exploratory work focused on identifying possible propagation drivers, recurrent system patterns, and mechanisms that could explain why similar disturbances sometimes produced very different system-level outcomes.
 
@@ -24,11 +24,13 @@ Development proceeded through successive abstraction stages:
 4. state-dependent amplification models
 5. structural propagation models incorporating coupling exposure, bottlenecks, and constrained flow
 
+---
+
 ## Scope
 
-The model is intended to explore how propagation emerges in constrained and coupled systems, and how such mechanisms can be represented in an interpretable structural form.
+The repository explores how propagation emerges in constrained and coupled systems, and how such mechanisms can be represented in an interpretable structural form.
 
-The focus is not full system replication or direct prediction, but the development of model structures that can support:
+The focus is not full system replication or direct prediction, but the development of structural models that can support:
 
 - propagation impact scores
 - ranking of agents, locations, or events by system-level exposure
@@ -37,24 +39,47 @@ The focus is not full system replication or direct prediction, but the developme
 - comparison between local event size and system-level effect
 - exploratory visualizations for operational interpretation
 
-In an operational setting, such outputs could support real-time situational awareness or retrospective impact analysis. In this repository, current examples are treated as conceptual and exploratory rather than validated operational decision tools.
+A central modeling objective is to investigate whether relatively small and interpretable structural models can later scale toward larger operational systems while still preserving operational usefulness and interpretability.
+
+The intended direction is not hardcoded rule-based scoring, but propagation indicators that emerge from structural relations such as capacity constraints, timing, topology, bottlenecks, and downstream coupling exposure.
+
+In an operational setting, such outputs could potentially support:
+
+- real-time propagation impact scoring
+- prioritization of mobile agents under constrained conditions
+- identification of vulnerable timing–location combinations
+- analysis of how local disturbances generate downstream system effects
+- retrospective propagation analysis and operational review
+
+For example, in a transport system, a structurally derived impact score could potentially support operational prioritization decisions without relying exclusively on hardcoded event categories or isolated delay magnitude.
+
+Current examples in this repository are synthetic and exploratory rather than validated operational decision tools.
+
+---
 
 ## Contents
 
-- `conceptual-model-v0.md`  
+- `conceptual-propagation-model-v0.md`  
   Aggregate conceptual model of disturbance accumulation and secondary propagation.
 
-- `conceptual-model-v1.md`  
+- `conceptual-propagation-model-v1.md`  
   Extension introducing state-dependent amplification effects.
 
-- `structural-model-v2.md`  
+- `structural-propagation-model-v2.md`  
   Structural propagation model based on coupling exposure and constrained flow.
-
-- `minimal-proxy.md`  
-  Minimal proxy system illustrating propagation and absorption mechanisms.
 
 - `scripts/`  
   Prototype implementations and exploratory model scripts.
 
 - `visualizations/`  
-  Conceptual diagrams, proxy outputs, animations, and exploratory visualizations.
+  Conceptual diagrams, synthetic outputs, and exploratory visualizations.
+
+---
+
+## Current Status
+
+This repository represents ongoing exploratory model development.
+
+The current formulations and examples are intentionally minimal and primarily intended to investigate interpretable structural representations of propagation behavior in constrained systems.
+
+The models should therefore be interpreted as conceptual and exploratory prototypes rather than validated operational systems.
