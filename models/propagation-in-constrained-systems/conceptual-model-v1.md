@@ -1,17 +1,18 @@
 # Conceptual Propagation Model (v1)
 
+## Purpose
+
 Model v1 extends Model v0 by introducing state-dependent amplification of disturbance impact. While Model v0 allows the system state to evolve over time, it assumes that the impact of disturbances is constant. Model v1 relaxes this assumption by allowing the system’s response to depend on its current level of operational stress.
 
 The purpose of this extension is not to fully represent operational complexity, but to introduce a minimal mechanism through which identical disturbances may lead to different propagation outcomes under different system conditions.
 
-> **Interpretation:**  
-> Model v1 is an aggregate amplification model. It does not represent detailed operational mechanisms, but isolates how system state modulates the impact of incoming disturbances.
+Model v1 is an aggregate amplification model. It does not represent detailed operational mechanisms, but isolates how system state modulates the impact of incoming disturbances.
 
 ---
 
 ## System Variables
 
-We retain the variables defined in Model v0
+We retain the variables defined in Model v0.
 
 The system state at time $t$ is given by:
 
@@ -25,8 +26,7 @@ The definition of $P(t)$ and its aggregation structure follow directly from Mode
 
 The dynamics of $M(t)$ are also inherited from Model v0 and are not repeated here.
 
-> Model v1 operates on aggregated and operationally defined quantities.  
-> The variables $P(t)$ and $S(t)$ reflect disturbances and propagation effects as they are typically represented in operational environments, while $M(t)$ represents unobserved or diffuse operational friction not explicitly captured in such representations.
+Model v1 operates on aggregated and operationally defined quantities. The variables $P(t)$ and $S(t)$ reflect disturbances and propagation effects as they are typically represented in operational environments, while $M(t)$ represents unobserved or diffuse operational friction not explicitly captured in such representations.
 
 ---
 
@@ -80,7 +80,7 @@ In this formulation, identical disturbance loads $P(t)$ may produce different le
 
 At low levels of accumulated pressure, disturbances are more easily absorbed. As $M(t)$ increases, the same disturbance load produces a stronger propagation effect.
 
-The nonlinearity is introduced exclusively through $\gamma(M)$ in order to isolate this mechanism.
+The nonlinearity is introduced exclusively through $\gamma(M)$ in order to isolate the mechanism through which identical disturbances may produce different outcomes depending on system state.
 
 ---
 
@@ -107,7 +107,7 @@ The nonlinear specification is applied to $\gamma(M)$ because it directly repres
 
 Introducing nonlinearity elsewhere (for example in accumulation or persistence terms) would introduce additional mechanisms such as nonlinear recovery or nonlinear buildup. Model v1 deliberately avoids this in order to isolate a single effect:
 
-> identical disturbances produce different outcomes depending on system state.
+identical disturbances produce different outcomes depending on system state.
 
 ---
 
@@ -134,11 +134,11 @@ Model v1 introduces state-dependent amplification, but still operates on aggrega
 
 The model does not explicitly represent:
 
-- spatial structure
-- coupling topology
-- constrained flow
-- heterogeneous agents
-- localized interaction mechanisms
+- spatial structure  
+- coupling topology  
+- constrained flow  
+- heterogeneous agents  
+- localized interaction mechanisms  
 
 Propagation is therefore represented as an aggregate system response rather than as an explicit structural process.
 
