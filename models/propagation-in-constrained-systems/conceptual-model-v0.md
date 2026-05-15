@@ -1,11 +1,12 @@
 # Conceptual Propagation Model (v0)
 
-This model represents the baseline conceptual framework that emerged alongside the exploratory analysis.  
+## Purpose
+
+This model represents the baseline conceptual framework developed during the exploratory analysis.
 It is intentionally minimal and designed to capture core mechanisms of propagation in scheduled, capacity-constrained operational systems.
 
 The model serves as a reference structure for subsequent model extensions.
 
-No structural modifications are introduced within this version.  
 Later developments are treated as separate model versions.
 
 ---
