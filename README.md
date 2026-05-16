@@ -46,6 +46,14 @@ It does not contain:
 - confidential information
 - proprietary analyses
 
+## AI usage
+
+AI-assisted tools have been used during parts of the development process for
+discussion, exploratory iteration, language refinement, and prototype code development.
+
+Concept development, model direction, interpretation, and repository structure
+reflect ongoing personal exploratory work and iterative model development.
+
 ## Status
 
 Early public portfolio version.
