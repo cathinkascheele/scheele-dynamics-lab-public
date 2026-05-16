@@ -10,7 +10,7 @@ Model v1 is an aggregate amplification model. It does not represent detailed ope
 
 ---
 
-## System Variables
+## System variables
 
 We retain the variables defined in Model v0.
 
@@ -30,7 +30,7 @@ Model v1 operates on aggregated and operationally defined quantities. The variab
 
 ---
 
-## Propagation Dynamics
+## Propagation dynamics
 
 Model v1 modifies the propagation equation by introducing state-dependent sensitivity:
 
@@ -46,7 +46,7 @@ where
 
 ---
 
-## State-Dependent Sensitivity
+## State-dependent sensitivity
 
 In Model v1, sensitivity is specified as an increasing but saturating function of accumulated operational friction:
 
@@ -84,7 +84,7 @@ The nonlinearity is introduced exclusively through $\gamma(M)$ in order to isola
 
 ---
 
-## Regime Intuition
+## Regime intuition
 
 Model v1 implies the existence of qualitatively different operating regimes:
 
@@ -101,7 +101,7 @@ This provides a mechanism through which relatively small differences in system s
 
 ---
 
-## Why Nonlinearity is Introduced in $\gamma(M)$
+## Why nonlinearity is introduced in $\gamma(M)$
 
 The nonlinear specification is applied to $\gamma(M)$ because it directly represents the system’s susceptibility to incoming disturbance load.
 
@@ -111,7 +111,7 @@ identical disturbances produce different outcomes depending on system state.
 
 ---
 
-## Model Status
+## Model status
 
 Model v1 is a minimal nonlinear extension of Model v0.
 
@@ -128,9 +128,9 @@ This provides a conceptual basis for:
 
 ---
 
-## Remaining Limitations
+## Remaining limitations
 
-Model v1 introduces state-dependent amplification, but still operates on aggregated system quantities.
+Model v1 introduces state-dependent amplification, but still operates on system-level quantities.
 
 The model does not explicitly represent:
 
