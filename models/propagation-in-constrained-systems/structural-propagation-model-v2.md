@@ -27,7 +27,7 @@ where:
 
 ---
 
-## Location and Capacity
+## Location and capacity
 
 Each location $\ell \in N \cup E$ has:
 
@@ -48,7 +48,7 @@ where:
 
 ---
 
-## Activation Function
+## Activation function
 
 Propagation is activated only when capacity is exceeded:
 
@@ -67,7 +67,7 @@ Interpretation:
 
 ---
 
-## Agent-Level Impact
+## Agent-level impact
 
 Each agent $a$ at time $t$ has:
 
@@ -83,7 +83,7 @@ where:
 
 ---
 
-## Coupling Factor $k_a(t)$
+## Coupling factor $k_a(t)$
 
 The coupling factor represents the downstream coupling exposure available to agent $a$ at time $t$.
 
@@ -114,23 +114,25 @@ Thus:
 - high coupling without load → limited spread  
 - propagation becomes amplified when both are present  
 
-The model separates local activation pressure from downstream propagation opportunity, allowing propagation exposure to be analyzed without requiring full system simulation.
+The model separates local activation pressure from downstream propagation opportunity, allowing structurally mediated propagation behavior to be analyzed without requiring full system simulation.
 
 ---
 
-## Model Scope
+## Model scope
+
+Model v2 is a minimal structural propagation model intended to isolate how local capacity pressure and downstream coupling exposure interact to produce system-level propagation potential.
 
 The model is:
 
-- structural (not statistical)  
-- mechanism-based (not descriptive)  
-- minimal (few variables, high interpretability)  
+- structural rather than statistical  
+- mechanism-oriented rather than descriptive  
+- intentionally minimal and interpretable  
 
-It is intended for:
+It is intended for exploratory analysis of:
 
-- identifying propagation risk  
-- comparing system configurations  
-- ranking agents, locations, or events by propagation exposure  
-- supporting operational interpretation and decision support  
+- structural propagation impact  
+- structurally vulnerable system configurations  
+- coupling-sensitive propagation behavior  
+- differences between local disturbance magnitude and downstream system effect  
 
-Model v2 is formulated as an operational impact model designed to be interpretable, testable, and scalable.
+The formulation is designed to support interpretable operational reasoning without requiring full operational replication or detailed simulation.
