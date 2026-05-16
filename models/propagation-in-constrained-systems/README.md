@@ -1,6 +1,6 @@
 # Propagation in Constrained Systems
 
-## Model Development
+## Model development
 
 The current model formulation was developed iteratively through exploratory analysis, qualitative observation, and gradual abstraction of recurring system behavior.
 
@@ -28,13 +28,13 @@ Development proceeded through successive abstraction stages:
 
 ## Scope
 
-The repository explores how propagation emerges in constrained and coupled systems, and how such mechanisms can be represented in an interpretable structural form.
+The modeling approach explores how propagation emerges in constrained and coupled systems, and how such mechanisms can be represented in an interpretable structural form.
 
 The focus is not full system replication or direct prediction, but the development of structural models that can support:
 
 - propagation impact scores
-- ranking of agents, locations, or events by system-level exposure
-- identification of vulnerable timing–location combinations
+- ranking of agents, locations, or events by structural propagation impact
+- identification of structurally vulnerable system configurations
 - analysis of threshold behavior and cascade regimes
 - comparison between local event size and system-level effect
 - exploratory visualizations for operational interpretation
@@ -47,11 +47,13 @@ In an operational setting, such outputs could potentially support:
 
 - real-time propagation impact scoring
 - prioritization of mobile agents under constrained conditions
-- identification of vulnerable timing–location combinations
+- identification of structurally vulnerable system configurations
 - analysis of how local disturbances generate downstream system effects
 - retrospective propagation analysis and operational review
+- comparison between local delay magnitude and structural propagation impact
+- identification of agents associated with disproportionate downstream system effects
 
-For example, in a transport system, a structurally derived impact score could potentially support operational prioritization decisions without relying exclusively on hardcoded event categories or isolated delay magnitude.
+For example, in a transport system, structurally derived impact scores could potentially support both operational prioritization and retrospective analysis without relying exclusively on isolated delay magnitude or aggregated performance measures.
 
 Current examples in this repository are synthetic and exploratory rather than validated operational decision tools.
 
@@ -76,7 +78,7 @@ Current examples in this repository are synthetic and exploratory rather than va
 
 ---
 
-## Current Status
+## Current status
 
 This repository represents ongoing exploratory model development.
 
