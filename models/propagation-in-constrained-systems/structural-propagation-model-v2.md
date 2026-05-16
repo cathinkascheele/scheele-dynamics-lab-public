@@ -136,3 +136,27 @@ It is intended for exploratory analysis of:
 - differences between local disturbance magnitude and downstream system effect  
 
 The formulation is designed to support interpretable operational reasoning without requiring full operational replication or detailed simulation.
+
+---
+
+## Remaining limitations
+
+Model v2 introduces explicit structural coupling and localized propagation activation, but several core challenges remain unresolved.
+
+A central open problem is how to define and estimate coupling exposure $k_a(t)$ in a way that captures operationally relevant downstream interaction structure without requiring full system simulation.
+
+Related challenges include:
+
+- determining which structural properties are operationally important
+- representing topology, bottlenecks, density, timing, and coupling opportunities in a tractable form
+- distinguishing local disturbance magnitude from structural propagation importance
+- scaling from small synthetic structures toward larger operational systems
+- evaluating whether structurally derived propagation indicators correspond to observed system-level effects
+
+The current formulation should therefore be interpreted as an exploratory structural framework rather than a validated operational model.
+
+---
+
+## Model status
+
+Model v2 represents the current structural formulation within the repository.
