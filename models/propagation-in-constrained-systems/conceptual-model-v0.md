@@ -11,7 +11,7 @@ Later developments are treated as separate model versions.
 
 ---
 
-## System Variables
+## System variables
 
 Let
 
@@ -21,7 +21,7 @@ Let
 
 ---
 
-## Primary Disturbance Input
+## Primary disturbance input
 
 Primary disturbance load is represented as a weighted combination of disturbance categories:
 
@@ -41,7 +41,7 @@ The formulation is intentionally generic and abstracts from domain-specific clas
 
 ---
 
-## Accumulated Operational Friction
+## Accumulated operational friction
 
 Accumulated operational friction is represented by $M(t)$ with dynamics
 
@@ -63,7 +63,7 @@ The coefficients $\eta$ represent the contribution of contextual operational fac
 
 ---
 
-## Propagation Dynamics
+## Propagation dynamics
 
 System-level propagation evolves according to
 
@@ -91,7 +91,7 @@ The underlying input variables remain intentionally abstract, while the relation
 
 ---
 
-## Stability Intuition
+## Stability intuition
 
 A simple stability intuition follows from the propagation equation
 
@@ -117,7 +117,7 @@ Systems with sufficient buffer capacity and recovery mechanisms tend to operate 
 
 ---
 
-## Limitations and Motivation for Extension
+## Limitations and motivation for extension
 
 Model v0 assumes that disturbance effects are constant and independent of system state.
 
@@ -139,7 +139,7 @@ Model v1 therefore introduces state-dependent propagation as the minimal extensi
 
 ---
 
-## Model Status
+## Model status
 
 This specification is treated as the baseline conceptual propagation model.
 
