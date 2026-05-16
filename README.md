@@ -20,7 +20,7 @@ A central interest throughout the repository is the gap between theoretical mode
 
 The goal is not perfect prediction or full system replication, but clearer thinking about propagation, constraints, sensitivity, and structure.
 
-The repository explores how relatively simple structural models can still provide useful insight into complex system behavior.
+The repository explores how relatively simple structural models and analytical approaches can still provide useful insight into complex system behavior.
 
 ## Repository structure
 
@@ -29,9 +29,6 @@ More developed conceptual, mathematical, or structure-oriented models.
 
 ### analysis/
 Exploratory analyses and prototype analytical approaches.
-
-### scripts/
-Lightweight scripts, synthetic examples, and prototype tooling.
 
 ### ideas/
 Early-stage concepts, exploratory notes, and emerging model directions.
@@ -52,3 +49,5 @@ It does not contain:
 ## Status
 
 Early public portfolio version.
+
+Parts of the repository structure are currently planned for future expansion and may contain limited or no material at this stage.
