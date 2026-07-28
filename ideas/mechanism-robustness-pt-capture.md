@@ -2,80 +2,59 @@
 
 ## Motivation
 
-This note explores whether Pt capture behavior can partly be interpreted as an interaction between material properties and changing reactor/process environments across operating regimes.
+Pt capture research combines several complementary approaches.
 
-Existing work already combines experimental characterization, thermodynamic reasoning, structural chemistry, and DFT-supported analysis.
+Experimental studies determine which materials capture platinum under specific operating conditions.
 
-Scale transition between laboratory, pilot, and process-relevant environments is already an important part of experimental Pt capture research.
+Atomistic modelling, including density functional theory (DFT), can be used to investigate thermodynamic stability, defect chemistry, reaction pathways and other microscopic mechanisms.
 
-One possible question is whether some aspects of these transitions can also be interpreted through a more explicit focus on:
+Characterization techniques such as XRD, SEM/EDX and XPS provide complementary information about crystal structures, morphology, elemental distributions and chemical states.
 
-- stability of dominant mechanisms across environments
-- environmental sensitivity
-- and regime-dependent behavior
+Together, these approaches provide detailed insight into material behaviour.
 
-The central idea is not that operating environments differ, or that material behavior cannot already be interpreted through chemistry, structure, thermodynamics, and experimental work.
+One challenge, however, is relating observations obtained under different operating environments.
 
-Rather, the challenge may be that increasingly complex operating environments introduce many interacting effects simultaneously, making system-level interpretation difficult to structure explicitly.
-
-This raises the question of whether some aspects of Pt capture behavior across environments can be represented through simplified regime-oriented models that focus on stability of dominant behavior rather than detailed mechanistic prediction.
-
-More specifically, the note asks whether it may be possible to reason more explicitly about:
-
-- how dominant mechanisms change across environments
-- how sensitive different materials are to such changes
-- and whether some materials appear to maintain more stable behavior across increasing environmental complexity
+Laboratory experiments, pilot plants and industrial reactors often differ in many variables simultaneously. While chemistry, thermodynamics and structural analysis provide important explanations, increasingly complex environments may introduce several interacting effects at once, making it difficult to determine which environmental changes are most responsible for the observed behaviour.
 
 ---
 
 ## Core question
 
-A central question is whether some Pt capture mechanisms appear more stable than others as operating environments become increasingly complex.
+One question that interests me is whether some aspects of Pt capture behaviour remain qualitatively stable across operating environments, while others appear to become increasingly sensitive as environmental complexity increases.
 
-If so, simplified regime-oriented models may function as a complementary interpretive layer alongside experiments, particularly when behavior across environments becomes difficult to infer directly from individual observations alone.
+If such patterns exist, it may be useful to describe material behaviour not only through individual experiments or microscopic mechanisms, but also through a higher-level representation of stable behavioural regions across multidimensional operating conditions.
+
+The intention would not be to replace existing approaches, but to explore whether such a representation could provide an additional way of organizing observations obtained from different experimental environments.
+
+More specifically, the idea is to ask whether it may be possible to reason more explicitly about
+
+- how dominant material behaviour changes across operating environments,
+- how sensitive different materials appear to be to such changes,
+- whether some materials appear to maintain more robust behaviour as environmental complexity increases,
+- and whether this perspective could help identify where additional experiments or atomistic calculations would be most informative.
+
+Whether this perspective provides practical value remains an open question.
 
 ---
 
-## Example direction: Nd₂O₃ vs Gd₂O₃
+## Relation to published work
 
-One possible qualitative comparison is the contrast between:
+This line of thinking was partly motivated by published Pt capture studies in which some materials appeared to behave relatively consistently across different environments, while others appeared to show stronger environmental dependence.
 
-- Nd₂O₃-based systems
-- Gd₂O₃-based systems
+One example is the qualitative contrast observed between Nd₂O₃- and Gd₂O₃-based systems reported in
 
-Nd-containing systems may suggest the existence of a relatively stable Pt incorporation pathway under varying conditions, including formation of Pt-containing phases under controlled conditions.
+> Hessevik, Carlsen, Bestul, Waller, Fjellvåg & Sjåstad (2025), *Oxides for Pt Capture in the Ammonia Oxidation Process — A Screening Study*.
 
-Gd-containing systems may instead indicate stronger dependence on environmental conditions or secondary interactions.
+The purpose of mentioning this work is **not** to claim that these materials have fundamentally different mechanisms or that existing explanations are insufficient.
 
-This does not imply complete mechanistic certainty.
-
-Rather, the idea is that different materials may exhibit different degrees of regime sensitivity as environmental complexity increases.
+Rather, the observations motivate the broader question of whether robustness across changing operating environments could itself be a useful property to describe more explicitly.
 
 ---
 
 ## Repository position
 
-This note is intentionally exploratory.
+This repository collects ideas related to Pt capture materials that I find scientifically interesting.
 
-The goal is not to propose a predictive reactor model or replace experimental and computational materials research.
+Its purpose is to explore whether system-level perspectives may provide useful ways of organizing observations across different operating environments while I continue learning about materials science, system modelling and complex physical systems.
 
-Instead, the note explores whether aspects of Pt capture behavior across operating environments can be represented through a regime-oriented systems perspective.
-
----
-
-## Related work
-
-This note is partially motivated by published work including:
-
-- Hessevik, Carlsen, Bestul, Waller, Fjellvåg & Sjåstad (2025)  
-  *Oxides for Pt Capture in the Ammonia Oxidation Process — A Screening Study*
-
-- Related work on Pt incorporation, phase formation, and oxide stability in Pt capture systems.
-
----
-
-## Status
-
-Exploratory concept note / work in progress.
-
-The ideas are partially motivated by published work on oxide materials for Pt capture in the ammonia oxidation process, including work I contributed to as co-author.
+The repository should therefore be viewed as an open collection of exploratory concepts.
