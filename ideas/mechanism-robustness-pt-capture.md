@@ -28,12 +28,12 @@ The intention would not be to replace existing approaches, but to explore whethe
 
 More specifically, the idea is to ask whether it may be possible to reason more explicitly about
 
-- how dominant material behaviour changes across operating environments,
-- how sensitive different materials appear to be to such changes,
-- whether some materials appear to maintain more robust behaviour as environmental complexity increases,
-- and whether this perspective could help identify where additional experiments or atomistic calculations would be most informative.
+* how dominant material behaviour changes across operating environments,
+* how sensitive different materials appear to be to such changes,
+* whether some materials appear to maintain more robust behaviour as environmental complexity increases,
+* and whether this perspective could help identify where additional experiments or atomistic calculations would be most informative.
 
-Whether this perspective provides practical value remains an open question.
+Whether this perspective provides practical value remains an open question. The broader aim is to explore whether system-level perspectives can provide useful ways of organizing observations across different operating environments.
 
 ---
 
@@ -51,10 +51,8 @@ Rather, the observations motivate the broader question of whether robustness acr
 
 ---
 
-## Repository position
+## Development status
 
-This repository collects ideas related to Pt capture materials that I find scientifically interesting.
-
-Its purpose is to explore whether system-level perspectives may provide useful ways of organizing observations across different operating environments while I continue learning about materials science, system modelling and complex physical systems.
-
-The repository should therefore be viewed as an open collection of exploratory concepts.
+**Status:** Concept
+**Target:** Unscheduled
+**Expected output:** Exploratory model
