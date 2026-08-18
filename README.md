@@ -31,7 +31,7 @@ More developed conceptual, mathematical, or structure-oriented models.
 Exploratory analyses and prototype analytical approaches.
 
 ### ideas/
-Early-stage concepts, exploratory notes, and emerging model directions.
+Early-stage concepts and planned work that may develop into models or analyses.
 
 ### communication/
 Communication and operational translation of complex systems concepts and analytical models.
