@@ -1,61 +1,59 @@
 # Scheele Dynamics Lab
 
-Public portfolio repository for minimal models, system dynamics, and operational analysis of complex systems.
+Scheele Dynamics Lab is a public working laboratory where I develop and test abstractions and minimal models to explore structure and behavior in complex phenomena. Through this work, I intend to investigate the possibilities and limitations of such representations in real-world analytical and educational contexts.
 
-This repository contains models, conceptual sketches, and exploratory notes related to:
+The repository contains work at different stages of development across domains, including transport systems and materials science. Each project states its current status, scope, and limitations.
 
-- transport and delay propagation
-- operational bottlenecks and coupling
-- regime behavior and structure evolution in materials systems under complex operating conditions
-- system dynamics and nonlinear behavior
-- analytical tooling and decision support
-- communication and pedagogy for complex technical systems
+Across these domains, the repository explores a common problem: how to reduce complexity without removing the structure needed for the question at hand.
 
-A central interest throughout the repository is the gap between theoretical models and real operational systems:
+Central questions include:
 
-- Which parts of reality are captured by simple models?
-- Which mechanisms disappear in aggregated reporting?
-- When does operational complexity break theoretical assumptions?
-- How can minimal models still support useful reasoning and decision-making?
+* What must a minimal representation preserve—and what can it omit?
+* When can it reveal mechanisms, constraints, relations, or changes in system state?
+* How can it complement empirical data, expert judgment, aggregated indicators, and more detailed models or simulations?
+* What can be generated from a small set of underlying structures, mechanisms, and transformations?
+* When does abstraction clarify understanding and communication, and when does it obscure too much?
+* Which principles transfer across domains, and which remain specific to the phenomenon and purpose?
 
-The goal is not perfect prediction or full system replication, but clearer thinking about propagation, constraints, sensitivity, and structure.
+Two connected directions are emerging: transparent models as a possible layer between aggregated reporting and detailed simulation, and generative approaches to mathematics and science learning, teaching, and communication.
 
-The repository explores how relatively simple structural models and analytical approaches can still provide useful insight into complex system behavior.
+## Purpose
+
+The lab serves three connected purposes:
+
+* documenting how I turn broad questions into bounded projects and reason through the problems they contain
+* developing my skills in model formulation, data analysis, computational implementation, validation, and technical communication through concrete projects
+* building a body of work toward professional roles or collaborations in one or more of these areas: technical system analysis and modeling, mathematics and science education, science communication, or work connecting them
 
 ## Repository structure
 
 ### models/
+
 More developed conceptual, mathematical, or structure-oriented models.
 
-### analysis/
+### analysis/ *(planned)*
+
 Exploratory analyses and prototype analytical approaches.
 
 ### ideas/
-Early-stage concepts and planned work that may develop into models or analyses.
 
-### communication/
-Communication and operational translation of complex systems concepts and analytical models.
+Early-stage concepts and planned work that may develop into models, analyses, or communication projects.
+
+### communication/ *(planned)*
+
+Explorations in mathematics and science learning, teaching, and communication, including the translation of complex concepts and models for different audiences.
 
 ## Public boundary
 
 This repository contains only generalized and public-safe material.
 
 It does not contain:
-- employer data
-- internal operational procedures
-- confidential information
-- proprietary analyses
+
+* employer data
+* internal operational procedures
+* confidential information
+* proprietary analyses
 
 ## AI usage
 
-AI-assisted tools have been used during parts of the development process for
-discussion, exploratory iteration, language refinement, and prototype code development.
-
-Concept development, model direction, interpretation, and repository structure
-reflect ongoing personal exploratory work and iterative model development.
-
-## Status
-
-Early public portfolio version.
-
-Parts of the repository structure are currently planned for future expansion and may contain limited or no material at this stage.
+AI-assisted tools are used throughout the development process for exploratory dialogue, model iteration and critique, literature discovery, language refinement, and prototype code. I set the direction, select and revise outputs, and remain responsible for interpretation, validation, and published content.
