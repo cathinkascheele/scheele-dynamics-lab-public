@@ -57,3 +57,8 @@ It does not contain:
 ## AI usage
 
 AI-assisted tools are used throughout the development process for exploratory dialogue, model iteration and critique, literature discovery, language refinement, and prototype code. I set the direction, select and revise outputs, and remain responsible for interpretation, validation, and published content.
+
+## Status
+
+Early-stage. The current focus is establishing the framework and direction while gradually developing the first projects. Some planned directories may remain empty during this phase.
+
