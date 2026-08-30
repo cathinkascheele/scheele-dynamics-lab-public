@@ -31,7 +31,7 @@ The lab serves three connected purposes:
 
 More developed conceptual, mathematical, or structure-oriented models.
 
-### analysis/ *(planned)*
+### analysis/ 
 
 Exploratory analyses and prototype analytical approaches.
 
@@ -39,7 +39,7 @@ Exploratory analyses and prototype analytical approaches.
 
 Early-stage concepts and planned work that may develop into models, analyses, or communication projects.
 
-### communication/ *(planned)*
+### communication/
 
 Explorations in mathematics and science learning, teaching, and communication, including the translation of complex concepts and models for different audiences.
 
