@@ -15,7 +15,9 @@ Central questions include:
 * When does abstraction clarify understanding and communication, and when does it obscure too much?
 * Which principles transfer across domains, and which remain specific to the phenomenon and purpose?
 
-Two connected directions are emerging: transparent models as a possible layer between aggregated reporting and detailed simulation, and generative approaches to mathematics and science learning, teaching, and communication.
+## Motivation
+
+Through work and learning across different domains, I have become increasingly interested in how real-world phenomena can be translated into mathematical and computational representations. This lab is a way for me to develop that interest into stronger modelling competence through concrete projects, while exploring which kinds of representations are useful for different questions.
 
 ## Purpose
 
