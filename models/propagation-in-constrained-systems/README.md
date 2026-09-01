@@ -2,86 +2,54 @@
 
 ## Model development
 
-The current model formulation was developed iteratively through exploratory analysis, qualitative observation, and gradual abstraction of recurring system behavior.
+The project originated in exploratory operational analysis where aggregated indicators and event-level summaries provided limited insight into differences in underlying system behaviour.
 
-Early exploratory work focused on identifying possible propagation drivers, recurrent system patterns, and mechanisms that could explain why similar disturbances sometimes produced very different system-level outcomes.
+Similar patterns of poor system performance could arise from very different combinations of underlying events — sometimes without any single event providing a convincing explanation. Conversely, apparently similar local disturbances could be associated with very different downstream outcomes depending on the surrounding operational conditions.
 
-Initial analysis combined aggregated performance metrics, temporal comparisons, localized inspection of operational behavior, and integration of partially connected data sources through shared operational identifiers.
+This led me to explore whether a different representation of the same operational behaviour might make the underlying relationships easier to understand, which became the starting point for an independent modelling process.
 
-Several early observations suggested that propagation behavior could not be explained by isolated disturbance magnitude alone, but appeared to emerge through constrained coupling opportunities shaped by timing, system state, load, and network structure.
+An early, tentative modelling hypothesis was that observed outcomes may depend more on the state of the system in which they occur, the structural position of the affected part of the network, and the dependencies and coupling through which effects can propagate, rather than on the magnitude of individual disturbances alone.
 
-Exploratory analysis further suggested that aggregated performance metrics and isolated cause categories were often informative at the local level, but less sufficient for explaining propagation behavior across highly coupled system states. Similar aggregate outcomes could arise through fundamentally different interaction patterns depending on topology, temporal clustering, capacity constraints, and accumulated operational stress.
+Delay propagation is already a well-established area of railway research, spanning analytical, dynamical, network-based, simulation and data-driven approaches. This makes it a useful setting in which to explore a broader modelling question:
 
-As model development progressed, parts of the emerging hypotheses were compared against literature related to nonlinear dynamics, propagation in coupled systems, and agent-based representations of operational behavior.
+<br>
 
-These observations motivated the development of increasingly structure-oriented models intended to represent propagation, coupling, and state-dependent system behavior more explicitly.
+> **What must a minimal representation preserve in order to meaningfully study delay propagation?**
 
-Development proceeded through successive abstraction stages:
-
-1. exploratory observation of recurring propagation patterns
-2. qualitative hypothesis development
-3. aggregate conceptual models of disturbance accumulation
-4. state-dependent amplification models
-5. structural propagation models incorporating coupling exposure, bottlenecks, and constrained flow
-
----
+<br>
 
 ## Scope
 
-The modeling approach explores how propagation emerges in constrained and coupled systems, and how such mechanisms can be represented in an interpretable structural form.
+The project explores how propagation can be represented in constrained and coupled systems using relatively small, interpretable models.
 
-The focus is not full system replication or direct prediction, but the development of structural models that can support:
+Such representations could be used to explore:
 
-- propagation impact scores
-- ranking of agents, locations, or events by structural propagation impact
-- identification of structurally vulnerable system configurations
-- analysis of threshold behavior and cascade regimes
-- comparison between local event size and system-level effect
-- exploratory visualizations for operational interpretation
+- whether some system states or structural configurations are more vulnerable to propagation than others
+- which combinations of timing, disturbance patterns, network position, topology and coupling are associated with greater downstream impact
+- whether some agents, locations or states consistently show higher propagation potential
+- whether impact scores or profiles provide useful ways of summarising that propagation potential
+- what is gained or lost when the same propagation problem is represented at different levels of detail
 
-A central modeling objective is to investigate whether relatively small and interpretable structural models can later scale toward larger operational systems while still preserving operational usefulness and interpretability.
-
-The intended direction is not hardcoded rule-based scoring, but propagation indicators that emerge from structural relations such as capacity constraints, timing, topology, bottlenecks, and downstream coupling exposure.
-
-In an operational setting, such outputs could potentially support:
-
-- real-time propagation impact scoring
-- prioritization of mobile agents under constrained conditions
-- identification of structurally vulnerable system configurations
-- analysis of how local disturbances generate downstream system effects
-- retrospective propagation analysis and operational review
-- comparison between local delay magnitude and structural propagation impact
-- identification of agents associated with disproportionate downstream system effects
-
-For example, in a transport system, structurally derived impact scores could potentially support both operational prioritization and retrospective analysis without relying exclusively on isolated delay magnitude or aggregated performance measures.
-
-Current examples in this repository are synthetic and exploratory rather than validated operational decision tools.
-
----
+Detailed planning, traffic management and real-time prioritization often rely on larger simulation, optimization or decision-support systems. However, small, transparent models might still be useful as part of an analytical framework for operational analysis and decision support.
 
 ## Contents
 
-- `conceptual-propagation-model-v0.md`  
+- `conceptual-propagation-model-v0.md`
   Aggregate conceptual model of disturbance accumulation and secondary propagation.
 
-- `conceptual-propagation-model-v1.md`  
+- `conceptual-propagation-model-v1.md`
   Extension introducing state-dependent amplification effects.
 
-- `structural-propagation-model-v2.md`  
+- `structural-propagation-model-v2.md`
   Structural propagation model based on coupling exposure and constrained flow.
-
-- `scripts/`  
+- `scripts/`
   Prototype implementations and exploratory model scripts.
 
-- `visualizations/`  
+- `visualizations/`
   Conceptual diagrams, synthetic outputs, and exploratory visualizations.
 
----
+## Status
 
-## Current status
+Early-stage exploratory model development.
 
-This repository represents ongoing exploratory model development.
-
-The current formulations and examples are intentionally minimal and primarily intended to investigate interpretable structural representations of propagation behavior in constrained systems.
-
-The models should therefore be interpreted as conceptual and exploratory prototypes rather than validated operational systems.
+Three initial representations have been sketched, with synthetic examples used to illustrate possible outputs. Current implementations are simple and deterministic, and are intended as a starting point for further modelling and literature review.
