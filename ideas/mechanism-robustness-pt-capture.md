@@ -18,7 +18,11 @@ Laboratory experiments, pilot plants and industrial reactors often differ in man
 
 This motivated me to explore the question:
 
+<br>
+
 > **What would a small model need to represent in order to describe how material behaviour changes across operating environments?**
+
+<br>
 
 The case is intended primarily as a learning environment for exploring how mechanistic knowledge, operating conditions and system-level behaviour can be translated into small, interpretable models.
 
