@@ -111,20 +111,16 @@ identical disturbances produce different outcomes depending on system state.
 
 ---
 
-## Model status
+## Status
 
-Model v1 is a minimal nonlinear extension of Model v0.
+Model v1 is an early conceptual extension of Model v0.
 
-It does not include explicit network structure, spatial interaction, or heterogeneous agent behavior. Instead, it isolates a single mechanism: state-dependent amplification of disturbance impact.
+It introduces the idea of state-dependent sensitivity, but the formulation has not yet been systematically examined with respect to parameter behaviour, limiting cases, sensitivity, or alternative functional forms.
 
-As such, it should be interpreted as an aggregate state model rather than a structural propagation model.
+The current specification should therefore be treated as a working hypothesis rather than a developed model.
 
-This provides a conceptual basis for:
+Further work would require first establishing whether state-dependent sensitivity is the appropriate minimal extension of Model v0 and, if so, how it should be represented.
 
-- understanding propagation as a state-dependent process  
-- identifying conditions under which propagation becomes amplified  
-- guiding analysis of context-dependent effects  
-- informing the design of subsequent structural model extensions
 
 ---
 
