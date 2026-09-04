@@ -1,13 +1,12 @@
-# Conceptual Propagation Model (v0)
+# First Abstraction of Propagation Dynamics (Model v0)
 
 ## Purpose
 
-This model represents the baseline conceptual framework developed during the exploratory analysis.
-It is intentionally minimal and designed to capture core mechanisms of propagation in scheduled, capacity-constrained operational systems.
+This version is a first explicit abstraction of an observed operational phenomenon.
 
-The model serves as a reference structure for subsequent model extensions.
+It translates a small set of commonly observed disturbance and operating-condition categories into a simple linear discrete-time dynamic representation, with the purpose of making assumptions about propagation, persistence, and system state explicit.
 
-Later developments are treated as separate model versions.
+The model's role is exploratory: to provide a concrete starting point for examining what a minimal representation would need to preserve, which quantities can reasonably be treated as separate, and where a simple additive formulation becomes insufficient.
 
 ---
 
@@ -17,55 +16,51 @@ Let
 
 - $S(t)$ denote system-level propagation response at time $t$
 - $P(t)$ denote total primary disturbance load at time $t$
-- $M(t)$ denote accumulated operational friction or latent system pressure
+- $M(t)$ denote accumulated background operational friction at time $t$
 
 ---
 
 ## Primary disturbance input
 
-Primary disturbance load is represented as a weighted combination of disturbance categories:
+Primary disturbance load is represented as a combination of disturbance categories:
 
 $$
-P(t)=\sum_{n=1}^{N}\alpha_n C_n(t)+\alpha_I I(t)+\alpha_E E(t)
+P(t)=\sum_{k\in\lbrace C,I,E\rbrace}\sum_{n=1}^{N_k} D_{k,n}(t)
 $$
 
 where
 
-- $C_n(t)$ represents operational disturbance categories
-- $I(t)$ represents structural or infrastructure-related disturbances
-- $E(t)$ represents external disturbances outside direct operational control
-
-The coefficients $\alpha$ represent the relative contribution of each disturbance category to the overall disturbance load.
-
-The formulation is intentionally generic and abstracts from domain-specific classification systems.
+- $C$ denotes operational disturbances
+- $I$ denotes infrastructure-related disturbances
+- $E$ denotes external disturbances outside direct operational control
+- $D_{k,n}(t)$ denotes the disturbance magnitude of event $n$ in category $k$ at time $t$
 
 ---
 
-## Accumulated operational friction
+## Background operational friction
 
-Accumulated operational friction is represented by $M(t)$ with dynamics
+Background operational friction is represented by $M(t)$ with dynamics
 
 $$
-M(t+1)=\rho M(t)+\eta_L L(t)+\eta_D D(t)+\eta_T T(t)+\eta_X X(t)
+M(t+1)=\rho M(t)+L(t)+Q(t)+T(t)+X(t)
 $$
 
 where
 
-- $M(t)$ represents accumulated operational pressure
-- $L(t)$ represents local operational load
-- $D(t)$ represents high-density or peak operating conditions
-- $T(t)$ represents schedule pressure, resource tightness, or limited recovery margins
-- $X(t)$ represents additional small operational frictions not explicitly captured elsewhere
+* $M(t)$ represents accumulated background operational friction
+* $L(t)$ represents the contribution from location-specific structural or operational friction
+* $Q(t)$ represents the contribution from traffic density or concentration
+* $T(t)$ represents the contribution from timetable tightness or limited recovery margins
+* $X(t)$ represents other small operational frictions not explicitly represented
 
-The parameter $\rho$ captures persistence of operational friction within the system.
+The parameter $\rho$ represents the persistence of background operational friction between time steps.
 
-The coefficients $\eta$ represent the contribution of contextual operational factors to accumulated system pressure.
 
 ---
 
 ## Propagation dynamics
 
-System-level propagation evolves according to
+System-level propagation evolves according to the propagation equation
 
 $$
 S(t+1)=\beta S(t)+\gamma P(t)+\mu M(t)
@@ -79,74 +74,98 @@ where
 
 ---
 
-## Interpretation
+## Model assumptions and parameter constraints
 
-Model v0 operates on aggregated and operationally defined quantities.
+The following assumptions are used in v0.
 
-The variables $P(t)$ and $S(t)$ represent disturbances and propagation effects as they are typically observed in operational environments, while $M(t)$ represents a latent or partially unobserved form of accumulated operational friction not explicitly captured in such representations.
+The model uses non-negative state variables and contributions:
 
-In this formulation, system-level propagation is interpreted as an emergent response arising from the interaction between primary disturbances and accumulated operational pressure rather than as the direct consequence of isolated disturbance events alone.
+$$
+P(t), M(t), S(t), L(t), Q(t), T(t), X(t) \geq 0.
+$$
 
-The underlying input variables remain intentionally abstract, while the relations between disturbance load, accumulated pressure, and propagation response are approximated as linear.
+The persistence parameters are restricted to
+
+$$
+0\leq \rho \leq 1,
+\qquad
+0\leq \beta \leq 1.
+$$
+
+The coupling coefficients are restricted to
+
+$$
+\gamma \geq 0,
+\qquad
+\mu \geq 0.
+$$
+
 
 ---
 
-## Stability intuition
+## Interpretation
 
-A simple stability intuition follows from the propagation equation
+Model v0 uses aggregated operational quantities that are in principle quantifiable from observed operations, while the formulation remains theoretical and uses abstract or synthetic inputs.
+
+The index $t$ denotes a discrete operational time step.
+
+In this formulation, propagation arises from the combined influence of existing propagation, primary disturbances, and accumulated operational friction rather than from isolated disturbance events alone.
+
+
+---
+
+## Persistence intuition
+
+In the ideal case where no primary disturbance or background operational friction contributes,
 
 $$
-S(t+1)=\beta S(t)+\gamma P(t)+\mu M(t)
+P(t)=0,
+\qquad
+M(t)=0,
 $$
 
-If new disturbances are temporarily ignored, the system reduces to
+and the system thus reduces to
 
 $$
-S(t+1)=\beta S(t)
+S(t+1)=\beta S(t).
 $$
 
 This implies:
 
-- if $|\beta|<1$, propagation effects gradually decay
-- if $\beta=1$, propagation persists
-- if $|\beta|>1$, propagation amplifies over time
+* if $0 \leq \beta < 1$, existing propagation effects gradually decay
+* if $\beta = 1$, existing propagation effects persist unchanged
 
-Operationally, $\beta$ captures the extent to which existing system pressure propagates into subsequent system states.
+Operationally, $\beta$ represents the fraction of existing propagation carried forward between time steps.
 
-Systems with sufficient buffer capacity and recovery mechanisms tend to operate in a stable regime ($\beta<1$), whereas high congestion, persistent load, or repeated disturbance interactions may push the system toward critical or unstable propagation regimes.
+
 
 ---
 
 ## Limitations and motivation for extension
 
-Model v0 assumes that disturbance effects are constant and independent of system state.
+Model v0 represents propagation through a direct linear and additive structure. This makes the relations between the model components explicit, but also imposes several strong assumptions.
 
-However, exploratory observations suggest that similar disturbance categories may produce very different propagation outcomes depending on operational context, accumulated system pressure, timing, and interaction with other ongoing processes.
+The coupling parameters $\gamma$ and $\mu$ are fixed. The model can therefore represent different overall sensitivities to primary disturbances and background operational friction, but these sensitivities do not change with the evolving system state.
 
-While Model v0 includes state variables such as accumulated operational friction, the system response remains linear and governed by constant parameters. The model therefore allows pressure to accumulate, but does not allow the system’s sensitivity to disturbances to vary with system state.
+The contributions $L(t)$, $Q(t)$, $T(t)$, and $X(t)$ enter $M(t)$ additively. Their possible interactions are not represented explicitly. In an operational railway system, these factors may instead be coupled, so that the effect of one condition depends on the presence or magnitude of another.
 
-In practice, propagation behavior appears increasingly sensitive under high load and constrained operating conditions, indicating state-dependent amplification rather than only state-dependent accumulation.
+The spatial representation is also left unresolved. If the model were developed further, the spatial unit represented by a location would need to be defined—for example as a point, section, corridor, or operational area—and related explicitly to the representation of propagation. This would also require defining when an effect should be interpreted as local and when it constitutes propagation beyond the originating location.
 
-In addition, disturbances within the same category are not necessarily homogeneous. Their impact may vary substantially depending on timing, topology, coupling opportunities, and interaction with concurrent disturbances. In Model v0, such variability is implicitly averaged out.
-
-These limitations motivate an extension in which propagation sensitivity is allowed to vary with system state.
-
-A full network representation may ultimately be required to capture spatial and agent-level propagation mechanisms. However, before introducing explicit network structure, it is useful to isolate a more basic limitation of Model v0:
-
-the model assumes constant disturbance effects, whereas observed propagation behavior appears strongly dependent on current system conditions.
-
-Model v1 therefore introduces state-dependent propagation as the minimal extension required to represent this mechanism more explicitly.
+These structural assumptions motivate exploring alternative representations that capture system state and interaction effects more directly, without necessarily introducing a fully explicit representation of all underlying dependencies.
 
 ---
 
-## Model status
+## Status
 
-This specification is treated as the baseline conceptual propagation model.
+### 04.09.26
 
-Subsequent model versions introduce additional mechanisms such as:
+Model v0 is conceptually complete as a baseline linear propagation model.
 
-- state-dependent amplification
-- structural coupling effects
-- constrained flow
-- network-sensitive propagation
-- heterogeneous agent interaction
+The remaining task is a small illustrative plot of the persistence term,
+
+$$
+S(t+1)=\beta S(t),
+$$
+
+using a few values of $\beta$ to verify and visualize the expected decay or persistence behaviour.
+
