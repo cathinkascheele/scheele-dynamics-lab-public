@@ -159,4 +159,14 @@ The current formulation should therefore be interpreted as an exploratory struct
 
 ## Model status
 
-Model v2 represents the current structural formulation within the repository.
+---
+
+Model v2 is an exploratory structural formulation representing the current direction of the modelling work.
+
+It was developed to investigate whether propagation can be represented more directly through local constraints and coupling structure rather than only through aggregated system-level quantities.
+
+The formulation is not yet a complete or validated model. Key definitions, including capacity, load, spatial units, coupling exposure, and the relation between local activation and observed propagation, remain open.
+
+Further development should build these elements systematically and evaluate whether the structural representation provides useful information beyond the simpler aggregate formulations.
+
+---
