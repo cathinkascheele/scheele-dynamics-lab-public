@@ -1,10 +1,26 @@
-# Conceptual Propagation Model (v1)
+# State-Dependent Propagation Dynamics (Model v1)
+
+## Status
+> **Early conceptual extension / working hypothesis**
+>
+> Model v1 introduces state-dependent sensitivity as one possible extension of Model v0. The current formulation is not yet treated as a developed model.
+>
+> Remaining work includes:
+> - defining parameter domains and constraints
+> - examining limiting cases and parameter behaviour
+> - testing sensitivity to the chosen functional form for $\gamma(M)$
+> - deciding whether $M(t)$ should both contribute directly through $\mu M(t)$ and modulate the response to $P(t)$ through $\gamma(M(t))$
+> - comparing this formulation with alternative representations before treating it as the next model stage
+
+<br>
+
+<br>
 
 ## Purpose
 
 Model v1 extends Model v0 by introducing state-dependent amplification of disturbance impact. While Model v0 allows the system state to evolve over time, it assumes that the impact of disturbances is constant. Model v1 relaxes this assumption by allowing the system’s response to depend on its current level of operational stress.
 
-The purpose of this extension is not to fully represent operational complexity, but to introduce a minimal mechanism through which identical disturbances may lead to different propagation outcomes under different system conditions.
+The purpose of this extension is to introduce a minimal mechanism through which identical disturbances may lead to different propagation outcomes under different system conditions.
 
 Model v1 is an aggregate amplification model. It does not represent detailed operational mechanisms, but isolates how system state modulates the impact of incoming disturbances.
 
@@ -22,11 +38,7 @@ $$
 
 while $P(t)$ enters the system as an exogenous input.
 
-The definition of $P(t)$ and its aggregation structure follow directly from Model v0.
-
-The dynamics of $M(t)$ are also inherited from Model v0 and are not repeated here.
-
-Model v1 operates on aggregated and operationally defined quantities. The variables $P(t)$ and $S(t)$ reflect disturbances and propagation effects as they are typically represented in operational environments, while $M(t)$ represents unobserved or diffuse operational friction not explicitly captured in such representations.
+Model v1 treats $P(t)$ and $M(t)$ as abstract model quantities representing primary disturbance load and background operational friction.
 
 ---
 
@@ -41,14 +53,14 @@ $$
 where
 
 - $\beta$ represents persistence of propagation effects  
-- $\mu$ represents the direct contribution of accumulated operational friction  
+- $\mu$ represents the direct contribution of operational friction  
 - $\gamma(M(t))$ represents sensitivity to primary disturbances as a function of system state  
 
 ---
 
 ## State-dependent sensitivity
 
-In Model v1, sensitivity is specified as an increasing but saturating function of accumulated operational friction:
+In Model v1, sensitivity is specified as an increasing and saturating function of background operational friction:
 
 $$
 \gamma(M(t))=
@@ -60,15 +72,15 @@ $$
 
 where
 
-- $\gamma_{\min}$ is baseline sensitivity under low operational stress  
-- $\gamma_{\max}$ is the upper bound of sensitivity in a high-stress regime  
-- $K$ determines the scale at which sensitivity transitions between regimes  
+- $\gamma_{\min}$ is baseline sensitivity at low background operational friction
+- $\gamma_{\max}$ is the upper bound of sensitivity
+- $K$ determines the scale at which sensitivity transitions toward the high-sensitivity regime
 
 This specification captures three key properties:
 
-- weak sensitivity at low $M(t)$  
-- accelerating increase in sensitivity at intermediate levels  
-- saturation at high $M(t)$  
+- low sensitivity at low $M(t)$
+- increasing sensitivity as $M(t)$ grows
+- saturation toward $\gamma_{\max}$ at high $M(t)$
 
 ---
 
@@ -78,7 +90,7 @@ Model v1 retains the structure of Model v0 but removes the assumption of constan
 
 In this formulation, identical disturbance loads $P(t)$ may produce different levels of propagation response depending on the system state $M(t)$. The system is therefore not only driven by disturbances, but also by its current susceptibility to disturbances.
 
-At low levels of accumulated pressure, disturbances are more easily absorbed. As $M(t)$ increases, the same disturbance load produces a stronger propagation effect.
+At low levels of background operational friction, disturbances are more easily absorbed. As $M(t)$ increases, the same disturbance load produces a stronger propagation effect.
 
 The nonlinearity is introduced exclusively through $\gamma(M)$ in order to isolate the mechanism through which identical disturbances may produce different outcomes depending on system state.
 
@@ -111,31 +123,8 @@ identical disturbances produce different outcomes depending on system state.
 
 ---
 
-## Status
+## Limitations
 
-Model v1 is an early conceptual extension of Model v0.
-
-It introduces the idea of state-dependent sensitivity, but the formulation has not yet been systematically examined with respect to parameter behaviour, limiting cases, sensitivity, or alternative functional forms.
-
-The current specification should therefore be treated as a working hypothesis rather than a developed model.
-
-Further work would require first establishing whether state-dependent sensitivity is the appropriate minimal extension of Model v0 and, if so, how it should be represented.
-
-
----
-
-## Remaining limitations
-
-Model v1 introduces state-dependent amplification, but still operates on system-level quantities.
-
-The model does not explicitly represent:
-
-- spatial structure  
-- coupling topology  
-- constrained flow  
-- heterogeneous agents  
-- localized interaction mechanisms  
-
-Propagation is therefore represented as an aggregate system response rather than as an explicit structural process.
-
-These limitations motivate the transition toward more structure-oriented propagation models.
+- The chosen functional form for $\gamma(M)$ has not yet been systematically tested against alternative representations.
+- Parameter ranges and limiting behaviour remain to be examined.
+- The model does not explicitly represent spatial topology or structural dependencies between locations, and therefore does not resolve how propagation moves through the system.
