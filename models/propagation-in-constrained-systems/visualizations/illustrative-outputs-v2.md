@@ -1,6 +1,6 @@
 # Illustrative Outputs — Model v2
 
-The following figures are synthetic and intended only as illustrative examples of possible structural behaviors implied by the model.
+>The following figures are synthetic and intended only as illustrative examples of possible structural behaviours implied by the current Model v2 formulation. The choice of metrics, scenarios, and output profiles may be revised as the model develops.
 <br>
 <br>
 
