@@ -1,4 +1,29 @@
-# Structural Propagation Model (v2)
+# Exploratory Structural Propagation Model (v2)
+
+## Status
+
+> **Exploratory structural playground / early formulation**
+>
+> Model v2 is an early exploration of a substantially different representation from Models v0 and v1.
+>
+> It experiments with representing propagation through local capacity pressure, spatial structure, and downstream coupling exposure.
+>
+> The formulation is not currently treated as the natural next stage after Model v1. A more systematic transition might require comparison with established railway propagation model classes and a clearer justification of which structural elements need to be preserved.
+>
+> Current open questions include:
+>
+> - whether a graph/agent representation is the appropriate next abstraction
+> - how location and spatial resolution should be defined
+> - how capacity and load should be represented
+> - whether the hard activation threshold at $u=1$ is meaningful
+> - how coupling exposure $k_a(t)$ should be defined
+> - how the formulation relates to established event-graph, network, or other railway propagation approaches
+> - whether the structural representation introduces more explicit components than are necessary to capture the propagation mechanism of interest
+
+<br>
+
+<br>
+
 
 ## Purpose
 
@@ -118,7 +143,7 @@ The model separates local activation pressure from downstream propagation opport
 
 ---
 
-## Model scope
+## Scope
 
 Model v2 is a minimal structural propagation model intended to isolate how local capacity pressure and downstream coupling exposure interact to produce system-level propagation potential.
 
@@ -135,38 +160,5 @@ It is intended for exploratory analysis of:
 - coupling-sensitive propagation behavior  
 - differences between local disturbance magnitude and downstream system effect  
 
-The formulation is designed to support interpretable operational reasoning without requiring full operational replication or detailed simulation.
+The formulation explores whether interpretable operational reasoning can be supported without full operational replication or detailed simulation.
 
----
-
-## Remaining limitations
-
-Model v2 introduces explicit structural coupling and localized propagation activation, but several core challenges remain unresolved.
-
-A central open problem is how to define and estimate coupling exposure $k_a(t)$ in a way that captures operationally relevant downstream interaction structure without requiring full system simulation.
-
-Related challenges include:
-
-- determining which structural properties are operationally important
-- representing topology, bottlenecks, density, timing, and coupling opportunities in a tractable form
-- distinguishing local disturbance magnitude from structural propagation importance
-- scaling from small synthetic structures toward larger operational systems
-- evaluating whether structurally derived propagation indicators correspond to observed system-level effects
-
-The current formulation should therefore be interpreted as an exploratory structural framework rather than a validated operational model.
-
----
-
-## Model status
-
----
-
-Model v2 is an exploratory structural formulation representing the current direction of the modelling work.
-
-It was developed to investigate whether propagation can be represented more directly through local constraints and coupling structure rather than only through aggregated system-level quantities.
-
-The formulation is not yet a complete or validated model. Key definitions, including capacity, load, spatial units, coupling exposure, and the relation between local activation and observed propagation, remain open.
-
-Further development should build these elements systematically and evaluate whether the structural representation provides useful information beyond the simpler aggregate formulations.
-
----
