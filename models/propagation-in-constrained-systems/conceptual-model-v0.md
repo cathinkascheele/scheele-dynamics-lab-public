@@ -1,5 +1,13 @@
 # First Abstraction of Propagation Dynamics (Model v0)
 
+## Status
+
+>**Model v0 is conceptually complete as a baseline linear propagation model.**
+
+<br>
+
+<br>
+
 ## Purpose
 
 This version is a first explicit abstraction of an observed operational phenomenon.
@@ -153,8 +161,3 @@ The spatial representation is also left unresolved. If the model were developed 
 
 These structural assumptions motivate exploring alternative representations that capture system state and interaction effects more directly, without necessarily introducing a fully explicit representation of all underlying dependencies.
 
----
-
-## Status
-
-Model v0 is conceptually complete as a baseline linear propagation model.
