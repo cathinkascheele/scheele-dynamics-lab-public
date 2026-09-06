@@ -157,15 +157,4 @@ These structural assumptions motivate exploring alternative representations that
 
 ## Status
 
-### 04.09.26
-
 Model v0 is conceptually complete as a baseline linear propagation model.
-
-The remaining task is a small illustrative plot of the persistence term,
-
-$$
-S(t+1)=\beta S(t),
-$$
-
-using a few values of $\beta$ to verify and visualize the expected decay or persistence behaviour.
-
