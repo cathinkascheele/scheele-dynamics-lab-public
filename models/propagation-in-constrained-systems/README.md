@@ -1,5 +1,22 @@
 # Propagation in Constrained Systems
 
+## Status
+
+> **Early-stage exploratory model development**
+>
+> Model v0 is conceptually complete for its current scope and includes a small numerical illustration of persistence behaviour.
+>
+> Model v1 is an early working hypothesis exploring state-dependent sensitivity and has not yet been systematically tested with respect to parameter behaviour, limiting cases, or alternative functional forms.
+>
+> Model v2 is an exploratory structural playground investigating a substantially different representation based on local capacity pressure, spatial structure, and coupling exposure. Its role and relationship to the earlier models remain open.
+>
+> Further work will include literature review, comparison with established model classes, and more systematic evaluation of which representations and mechanisms are useful to retain.
+
+<br>
+
+<br>
+
+
 ## Model development
 
 The project originated in exploratory operational analysis where aggregated indicators and event-level summaries provided limited insight into differences in underlying system behaviour.
@@ -34,19 +51,20 @@ Detailed planning, traffic management and real-time prioritization often rely on
 
 ## Contents
 
-- `conceptual-propagation-model-v0.md`
-  Aggregate conceptual model of disturbance accumulation and secondary propagation.
+- `conceptual-model-v0.md`
+  Baseline linear discrete-time model of disturbance, background friction, and propagation.
 
-- `conceptual-propagation-model-v1.md`
-  Extension introducing state-dependent amplification effects.
+- `conceptual-model-v1.md`
+  State-dependent propagation formulation.
 
-- `structural-propagation-model-v2.md`
-  Structural propagation model based on coupling exposure and constrained flow.
+- `structural-model-v2.md`
+  Structural formulation using local capacity pressure and coupling exposure.
+
 - `scripts/`
   Prototype implementations and exploratory model scripts.
 
 - `visualizations/`
-  Conceptual diagrams, synthetic outputs, and exploratory visualizations.
+  Model-generated illustrations, synthetic examples, and exploratory visualizations.
 
 ## Status
 
