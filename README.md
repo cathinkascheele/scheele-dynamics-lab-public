@@ -1,5 +1,18 @@
 # Scheele Dynamics Lab
 
+## Status
+
+>**Early-stage. The current focus is establishing the framework and direction while gradually developing the first projects.**
+>
+>The lab is intentionally broad at this stage, but is not intended to cover modelling in general. Ongoing development includes narrowing the scope and identifying which scales, model classes, and mathematical or computational approaches should form the main focus of later work.
+>
+>Some planned directories may remain empty during this phase.
+
+<br>
+<br>
+
+## About
+
 Scheele Dynamics Lab is a public working laboratory where I develop and test abstractions and minimal models to explore structure and behavior in complex phenomena. Through this work, I intend to investigate the possibilities and limitations of such representations in real-world analytical and educational contexts.
 
 The repository contains work at different stages of development across domains, including transport systems and materials science. Each project states its current status, scope, and limitations.
@@ -60,7 +73,4 @@ It does not contain:
 
 AI-assisted tools are used throughout the development process for exploratory dialogue, model iteration and critique, literature discovery, language refinement, and prototype code. I set the direction, select and revise outputs, and remain responsible for interpretation, validation, and published content.
 
-## Status
-
-Early-stage. The current focus is establishing the framework and direction while gradually developing the first projects. Some planned directories may remain empty during this phase.
 
