@@ -74,7 +74,7 @@ where
 
 ---
 
-## Model assumptions and parameter constraints
+## Assumptions and parameter constraints
 
 The following assumptions are used in v0.
 
