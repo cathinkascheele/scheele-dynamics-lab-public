@@ -66,8 +66,3 @@ Detailed planning, traffic management and real-time prioritization often rely on
 - `visualizations/`
   Model-generated illustrations, synthetic examples, and exploratory visualizations.
 
-## Status
-
-Early-stage exploratory model development.
-
-Three initial representations have been sketched, with synthetic examples used to illustrate possible outputs. Current implementations are simple and deterministic, and are intended as a starting point for further modelling and literature review.
