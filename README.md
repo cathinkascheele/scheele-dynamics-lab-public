@@ -2,7 +2,7 @@
 
 ## Status
 
->**Early-stage. The current focus is establishing the framework and direction while gradually developing the first projects.**
+>**Developing portfolio. The repository currently combines applied systems analysis, mechanism-oriented modelling, and exploratory mathematical/computational work. Projects range from early conceptual experiments to developed analytical frameworks and applied analytical work.**
 >
 >The lab is intentionally broad at this stage, but is not intended to cover modelling in general. Ongoing development includes narrowing the scope and identifying which scales, model classes, and mathematical or computational approaches should form the main focus of later work.
 >
