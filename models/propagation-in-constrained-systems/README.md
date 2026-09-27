@@ -2,15 +2,16 @@
 
 ## Status
 
-> **Early-stage exploratory model development**
+> **Exploratory model development — currently paused**
 >
-> Model v0 is conceptually complete for its current scope and includes a small numerical illustration of persistence behaviour.
+> The initial development progressed rapidly from an aggregate linear representation in Model v0, through state-dependent sensitivity in Model v1, to an exploratory structural representation in Model v2.
 >
-> Model v1 is an early working hypothesis exploring state-dependent sensitivity and has not yet been systematically tested with respect to parameter behaviour, limiting cases, or alternative functional forms.
+> This progression exposed a growing gap between the level of abstraction in the models and the analytical foundation available to justify their structure. Further development requires a more systematic understanding of the relevant state variables, spatial units, coupling mechanisms, and their relationship to observable operational behaviour.
 >
-> Model v2 is an exploratory structural playground investigating a substantially different representation based on local capacity pressure, spatial structure, and coupling exposure. Its role and relationship to the earlier models remain open.
+> Direct extension of the model sequence is therefore paused. The underlying questions will instead be approached incrementally through smaller operational analyses, synthetic experiments, relevant mathematics, and comparison with established propagation literature and model classes.
 >
-> Further work will include literature review, comparison with established model classes, and more systematic evaluation of which representations and mechanisms are useful to retain.
+> The existing v0–v2 models are retained as exploratory stages of the modelling process and as a starting point for later development.
+
 
 <br>
 
