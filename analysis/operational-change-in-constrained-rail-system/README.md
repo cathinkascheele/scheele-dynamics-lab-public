@@ -35,7 +35,7 @@ The case is designed around a central analytical question:
 
 ---
 
-## Simulation Design
+## Simulation design
 
 ### Network
 
@@ -129,7 +129,7 @@ Cause data may provide evidence consistent with particular operational mechanism
 
 ---
 
-## Analytical Challenge
+## Analytical challenge
 
 The synthetic system is deliberately designed so that a simple before/after comparison is insufficient.
 
@@ -148,7 +148,7 @@ Historical observations from 2023 and 2024 provide a reference for determining w
 
 ---
 
-## Ground Truth and Analysis
+## Ground truth and analysis
 
 The mechanisms described above constitute the **simulation ground truth**.
 
